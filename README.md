@@ -29,15 +29,15 @@ Mnemonic guide for systematic creation of test scenarios in financial APIs:
 * **R — Responsiveness (Performance and Stability):**  
   * Response time monitoring (SLA), pagination in large listings, and concurrency control with *Rate Limiting* (429 Too Many Requests).
 
-1. # **3\. Common Pitfalls in API Testing**
+# **3\. Common Pitfalls in API Testing**
 
-2. **Incorrect Use of HTTP Verbs:** Executing state mutations using the `GET` method.  
-3. **Authentication/Authorization Flaws:** Allowing access without a valid token or broken isolation between accounts (IDOR).  
-4. **Missing or Weak Data Validation:** Trusting the sent payload without validating types, limits, or malicious injections (SQLi/XSS).  
-5. **Generic Error Messages:** Returning messages lacking clarity regarding the violated rule.  
-6. **Incorrect Use of Status Codes:** Returning `200 OK` with an internal error payload or `500 Internal Server Error` for client-side failures.  
-7. **Poor Performance and Lack of Pagination:** Degradation in unconstrained queries and concurrency without transactional locking.  
-8. **Stack Trace Exposure:** Displaying internal architecture and server details in unhandled errors.
+1. **Incorrect Use of HTTP Verbs:** Executing state mutations using the `GET` method.  
+2. **Authentication/Authorization Flaws:** Allowing access without a valid token or broken isolation between accounts (IDOR).  
+3. **Missing or Weak Data Validation:** Trusting the sent payload without validating types, limits, or malicious injections (SQLi/XSS).  
+4. **Generic Error Messages:** Returning messages lacking clarity regarding the violated rule.  
+5. **Incorrect Use of Status Codes:** Returning `200 OK` with an internal error payload or `500 Internal Server Error` for client-side failures.  
+6. **Poor Performance and Lack of Pagination:** Degradation in unconstrained queries and concurrency without transactional locking.  
+7. **Stack Trace Exposure:** Displaying internal architecture and server details in unhandled errors.
 
 # **4\. Architecture and Configuration of the Automation Project**
 
